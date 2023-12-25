@@ -1,0 +1,33 @@
+:root {
+    --main-bg: #101017;
+    --main-text: #888888;
+    --main-title: #fff;
+    --main-accent: #198754;
+}
+body {
+    background: var(--main-bg);
+    color: var(--main-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.wrapper {
+    min-height: 100vh;
+}
+a {
+    color: var(--main-title);
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+a:hover {
+    opacity: 0.7;
+}
+ul {
+    margin: 0;
+}
+button {
+    color: var(--main-title);
+    transition: 0.3s all ease;
+    color: var(-);
+}

@@ -35,11 +35,12 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/main.scss";
 .header {
     padding: 1.125rem 0;
     &__logo {
         span {
-            color: var(--main-accent);
+            color: $main-accent;
         }
         @media (min-width: 768px) {
             font-size: 1.5rem;

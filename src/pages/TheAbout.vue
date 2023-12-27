@@ -1,8 +1,4 @@
-<script setup>
-import TheLayout from "../components/TheLayout.vue";
-</script>
-<template>
-    <TheLayout>TheLayout</TheLayout>
-</template>
+<script setup></script>
+<template></template>
 
 <style lang="scss"></style>

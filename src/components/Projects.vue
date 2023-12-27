@@ -1,32 +1,32 @@
 <script setup>
 const projects = [
     {
-        img: "src/assets/img/1.jpg",
+        img: "./img/1.jpg",
         name: "DESIGN PORTFOLIO",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-        img: "src/assets/img/2.jpg",
+        img: "./img/2.jpg",
         name: "E-LEARNING LANDING PAGE",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-        img: "src/assets/img/3.jpg",
+        img: "./img/3.jpg",
         name: "TODO WEB APP",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-        img: "src/assets/img/4.jpg",
+        img: "./img/4.jpg",
         name: "ENTERTAINMENT WEB APP",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-        img: "src/assets/img/5.jpg",
+        img: "./img/5.jpg",
         name: "MEMORY GAME",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-        img: "src/assets/img/6.jpg",
+        img: "./img/6.jpg",
         name: "ART GALLERY SHOWCASE",
         stack: ["HTML", "CSS", "JAVASCRIPT"],
     },

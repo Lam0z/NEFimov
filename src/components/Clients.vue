@@ -43,7 +43,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y];
                         </p>
                         <div class="reviews__item-person">
                             <img
-                                src="src/assets/img/monalisa.jpg"
+                                src="../assets/img/monalisa.jpg"
                                 alt=""
                                 class="reviews__person-img"
                             />
@@ -67,7 +67,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y];
                         </p>
                         <div class="reviews__item-person">
                             <img
-                                src="src/assets/img/man.jpg"
+                                src="../assets/img/man.jpg"
                                 alt=""
                                 class="reviews__person-img"
                             />
@@ -89,7 +89,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y];
                         </p>
                         <div class="reviews__item-person">
                             <img
-                                src="src/assets/img/woman.jpg"
+                                src="../assets/img/woman.jpg"
                                 alt=""
                                 class="reviews__person-img"
                             />

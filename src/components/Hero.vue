@@ -1,30 +1,75 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const job = ref("");
+
+const printJob = () => {
+    const fullJob = "Frontend Developer".split("");
+    let count = 0;
+    setInterval(() => {
+        if (count < fullJob.length) {
+            job.value += fullJob[count];
+            count++;
+        } else {
+            clearInterval();
+        }
+    }, 100);
+};
+printJob();
+</script>
 <template>
-    <section class="hero">
+    <section class="hero d-flex flex-column justify-content-center">
         <div class="container">
             <h2 class="hero__main-subtitle">Hello, I'm Nick Efimov</h2>
-            <h1 class="hero__main-title">Frontend Developer</h1>
+            <h1 class="hero__main-title">
+                {{ job
+                }}<span class="pulse"
+                    ><font-awesome-icon icon="fa-solid fa-i-cursor"
+                /></span>
+            </h1>
             <p class="hero__description">
-                I’m from Singapore and I have been working as a Product Designer
-                for more than 7 years. I’ve worked for a Hanziree company Pabloo
-                as a Product Designer and Front-end Developer for 3 years.
+                Я из Подмосковья, работаю веб-разработчиком более 3-х лет. За
+                это время успел поработать как в компаниях, так и на фрилансе, в
+                качестве HTML-верстальщика / Frontend-разработчика.
             </p>
             <div class="hero__btns-container">
                 <button type="button" class="btn btn-success rounded-0 fw-bold">
-                    Email Me
+                    Связаться со мной
                 </button>
             </div>
         </div>
+        <video class="hero__video-bg" autoplay loop>
+            <source
+                src="../assets/video/bg.mp4"
+                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+        </video>
     </section>
 </template>
 
 <style lang="scss">
 @import "../assets/main.scss";
 .hero {
+    padding-top: 5rem;
+    @media (min-width: 768px) {
+        margin-top: 0;
+        min-height: 100vh;
+    }
+
+    position: relative;
+    &__video-bg {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        // min-width: 500px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     &__main-subtitle {
         color: $main-accent;
         font-weight: 700;
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
             font-size: 2.375rem;
             line-height: 4.25rem;
         }
@@ -32,13 +77,16 @@
 
     &__main-title {
         color: $main-title;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 700;
         line-height: 2.625rem;
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
             font-size: 5.5rem;
             line-height: 5.875rem;
             margin-bottom: 2.5rem;
+        }
+        span {
+            color: $main-accent;
         }
     }
 

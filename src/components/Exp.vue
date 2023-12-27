@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-    <section class="exp">
+    <section class="exp" id="exp">
         <div class="container">
             <div class="section-title">
                 <div class="section-title__top">
@@ -142,7 +142,7 @@
             transition: 0.3s all ease;
             &:hover {
                 background: $main-accent;
-                border-bottom: 5px solid $main-accent;
+                border-bottom: 0.3125rem solid $main-accent;
                 .exp__tech-list-description {
                     color: $main-title;
                     opacity: 1;

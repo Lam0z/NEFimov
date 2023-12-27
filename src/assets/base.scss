@@ -1,4 +1,5 @@
 $main-bg: #101017;
+$main-bg-second: #0a0a0f;
 $main-text: #888888;
 $main-title: #fff;
 $main-accent: #198754;
@@ -44,7 +45,7 @@ button {
     transition: 0.3s all ease;
 }
 .section-title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     &__top {
         @media (min-width: 992px) {
@@ -90,4 +91,38 @@ button {
             line-height: 3rem;
         }
     }
+    &__main-subtext {
+        margin-top: 0.625rem;
+        @media (min-width: 768px) {
+            margin-top: 1.25rem;
+        }
+    }
 }
+
+.pulse {
+    opacity: 0;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before,
+.hamburger--spin.is-active .hamburger-inner:before,
+.hamburger--spin.is-active .hamburger-inner:after,
+.hamburger--spin.is-active .hamburger-inner {
+    background: $main-accent;
+}
+// .hamburger--elastic.is-active .hamburger-inner:before

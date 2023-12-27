@@ -33,7 +33,7 @@ const projects = [
 ];
 </script>
 <template>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="projects__top">
                 <div class="section-title">
@@ -52,7 +52,7 @@ const projects = [
                 </button>
             </div>
             <div class="projects__list">
-                <div class="row g-5">
+                <div class="row g-sm-5">
                     <div
                         class="col-12 col-md-6"
                         v-for="(item, index) in projects"
@@ -156,9 +156,9 @@ const projects = [
         span {
             transition: 0.3s all ease;
             @media (min-width: 992px) {
-                font-size: 18px;
+                font-size: 1.125rem;
                 font-weight: 500;
-                line-height: 28px;
+                line-height: 1.75rem;
             }
             &:hover {
                 color: $main-accent;

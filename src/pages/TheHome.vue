@@ -5,6 +5,7 @@ import Hero from "../components/Hero.vue";
 import Exp from "../components/Exp.vue";
 import Projects from "../components/Projects.vue";
 import Clients from "../components/Clients.vue";
+import Contact from "../components/Contact.vue";
 </script>
 <template>
     <Header />
@@ -13,6 +14,7 @@ import Clients from "../components/Clients.vue";
         <Exp />
         <Projects />
         <Clients />
+        <Contact />
     </Layout>
 </template>
 

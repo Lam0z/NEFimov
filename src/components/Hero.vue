@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-
+import { TELEGRAM } from "@/constants";
 const job = ref("");
 
 const printJob = () => {
@@ -22,20 +22,42 @@ printJob();
         <div class="container">
             <h2 class="hero__main-subtitle">Hello, I'm Nick Efimov</h2>
             <h1 class="hero__main-title">
-                {{ job
-                }}<span class="pulse"
-                    ><font-awesome-icon icon="fa-solid fa-i-cursor"
-                /></span>
+                {{ job }}<span class="pulse">|</span>
             </h1>
             <p class="hero__description">
+                <div class="header-inner">
+                    <div class="font-size">
+                        <div class="font-height-awesome-tight"></div>
+                        <div class="line-height">
+                            <div class="font-awesome-icon">
+                                <div class="font-awesome-iconfinder">
+                                    <div class="icon-inner-text">
+                                        <div class="icon-finder-inner-text"><div class="iconfinder"><div class="">
+                                            
+                                            hellowroldlsllsl</div></div></div>
+                                    </div>
+                                    <div class="hello-world">
+                                        <div class="hello-wrold"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 Я из Подмосковья, работаю веб-разработчиком более 3-х лет. За
                 это время успел поработать как в компаниях, так и на фрилансе, в
-                качестве HTML-верстальщика / Frontend-разработчика.
+                качестве HTML-верстальщика / frontend skills
+                Frontend-разработчика.
+                <div class="div">hello-wrold</div>
             </p>
             <div class="hero__btns-container">
-                <button type="button" class="btn btn-success rounded-0 fw-bold">
+                <a
+                    target="_blank"
+                    :href="`${TELEGRAM}`"
+                    class="btn btn-success rounded-0 fw-bold"
+                >
                     Связаться со мной
-                </button>
+                </a>
             </div>
         </div>
         <video class="hero__video-bg" autoplay loop>

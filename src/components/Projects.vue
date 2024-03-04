@@ -52,7 +52,7 @@ const projects = [
                 </button>
             </div>
             <div class="projects__list">
-                <div class="row g-sm-5">
+                <div class="row g-5">
                     <div
                         class="col-12 col-md-6"
                         v-for="(item, index) in projects"

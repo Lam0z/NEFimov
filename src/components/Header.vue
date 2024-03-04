@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
+import { TELEGRAM } from "@/constants";
 const menuIsActive = ref(false);
 const isScroll = ref(false);
 onMounted(() => {
@@ -40,12 +41,13 @@ const toggleMenu = () => (menuIsActive.value = false);
                             <a href="#reviews" @click="toggleMenu">Отзывы</a>
                         </li>
                         <li class="header__nav-item">
-                            <button
-                                type="button"
+                            <a
+                                :href="TELEGRAM"
+                                target="_blank"
                                 class="btn btn-outline-success rounded-0 fw-bold"
                             >
                                 Написать мне
-                            </button>
+                            </a>
                         </li>
                     </ul>
                     <button
@@ -71,7 +73,7 @@ const toggleMenu = () => (menuIsActive.value = false);
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 
     @media (min-width: 768px) {
         padding: 1.125rem 0;
@@ -110,7 +112,7 @@ const toggleMenu = () => (menuIsActive.value = false);
             &:hover {
                 cursor: pointer;
             }
-            a {
+            a:not(.btn) {
                 position: relative;
                 &::before {
                     content: "";

@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { TELEGRAM } from "@/constants";
+</script>
 <template>
     <section class="contact">
         <div class="container">
@@ -14,9 +16,9 @@
                         </p>
                     </div>
                 </div>
-                <button class="btn-success btn rounded-0 fw-bold">
+                <a :href="TELEGRAM" class="btn-success btn rounded-0 fw-bold">
                     Связаться со мной
-                </button>
+                </a>
             </div>
         </div>
     </section>

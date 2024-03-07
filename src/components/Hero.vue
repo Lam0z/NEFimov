@@ -25,30 +25,10 @@ printJob();
                 {{ job }}<span class="pulse">|</span>
             </h1>
             <p class="hero__description">
-                <div class="header-inner">
-                    <div class="font-size">
-                        <div class="font-height-awesome-tight"></div>
-                        <div class="line-height">
-                            <div class="font-awesome-icon">
-                                <div class="font-awesome-iconfinder">
-                                    <div class="icon-inner-text">
-                                        <div class="icon-finder-inner-text"><div class="iconfinder"><div class="">
-                                            
-                                            hellowroldlsllsl</div></div></div>
-                                    </div>
-                                    <div class="hello-world">
-                                        <div class="hello-wrold"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 Я из Подмосковья, работаю веб-разработчиком более 3-х лет. За
                 это время успел поработать как в компаниях, так и на фрилансе, в
                 качестве HTML-верстальщика / frontend skills
                 Frontend-разработчика.
-                <div class="div">hello-wrold</div>
             </p>
             <div class="hero__btns-container">
                 <a

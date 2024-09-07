@@ -4,9 +4,10 @@ import { TELEGRAM } from "@/constants";
 const menuIsActive = ref(false);
 const isScroll = ref(false);
 onMounted(() => {
-    window.addEventListener("scroll", (e) => {
-        window.scrollY > 1 ? (isScroll.value = true) : (isScroll.value = false);
-    });
+    window.addEventListener(
+        "scroll",
+        (e) => (isScroll.value = window.scrollY > 1 ? true : false)
+    );
 });
 window.addEventListener("resize", (e) => {
     menuIsActive.value = false;

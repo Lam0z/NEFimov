@@ -20,15 +20,14 @@ printJob();
 <template>
     <section class="hero d-flex flex-column justify-content-center">
         <div class="container">
-            <h2 class="hero__main-subtitle">Hello, I'm Nick Efimov</h2>
+            <h2 class="hero__main-subtitle">Привет, Я - Никита</h2>
             <h1 class="hero__main-title">
                 {{ job }}<span class="pulse">|</span>
             </h1>
             <p class="hero__description">
                 Я из Подмосковья, работаю веб-разработчиком более 3-х лет. За
                 это время успел поработать как в компаниях, так и на фрилансе, в
-                качестве HTML-верстальщика / frontend skills
-                Frontend-разработчика.
+                качестве HTML-верстальщика / Frontend-разработчика.
             </p>
             <div class="hero__btns-container">
                 <a
@@ -40,9 +39,13 @@ printJob();
                 </a>
             </div>
         </div>
-        <video class="hero__video-bg" autoplay loop>
-            <source src="../assets/video/bg.mp4" type="video/mp4" />
-        </video>
+        <video
+            class="hero__video-bg"
+            src="../assets/video/bg.mp4"
+            muted
+            autoplay
+            loop
+        ></video>
     </section>
 </template>
 

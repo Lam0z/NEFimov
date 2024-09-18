@@ -1,34 +1,18 @@
 <script setup>
 const projects = [
     {
-        img: "./img/1.jpg",
-        name: "DESIGN PORTFOLIO",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
+        img: "./img/meal.jpg",
+        name: "Database of Recipes",
+        preview: "https://lam0z.github.io/meal/",
+        linkGH: "https://github.com/Lam0z/meal",
+        stack: ["HTML", "CSS", "JAVASCRIPT", "VUE (router, pinia)"],
     },
     {
-        img: "./img/2.jpg",
-        name: "E-LEARNING LANDING PAGE",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
-    },
-    {
-        img: "./img/3.jpg",
-        name: "TODO WEB APP",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
-    },
-    {
-        img: "./img/4.jpg",
-        name: "ENTERTAINMENT WEB APP",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
-    },
-    {
-        img: "./img/5.jpg",
-        name: "MEMORY GAME",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
-    },
-    {
-        img: "./img/6.jpg",
-        name: "ART GALLERY SHOWCASE",
-        stack: ["HTML", "CSS", "JAVASCRIPT"],
+        img: "./img/todo.jpg",
+        name: "ToDo app",
+        preview: "https://lam0z.github.io/todo/",
+        linkGH: "https://github.com/Lam0z/todo",
+        stack: ["HTML", "CSS", "JAVASCRIPT (LocalStorage)", "VUE"],
     },
 ];
 </script>
@@ -62,16 +46,20 @@ const projects = [
                             <div class="projects__item-thumb">
                                 <img :src="item.img" alt="image" />
                                 <div class="projects__item-more">
-                                    <button
+                                    <a
+                                        :href="item.preview"
+                                        target="_blank"
                                         class="btn-outline-success btn rounded-0 fw-bold"
                                     >
                                         Посмотреть проект
-                                    </button>
-                                    <button
+                                    </a>
+                                    <a
+                                        :href="item.linkGH"
+                                        target="_blank"
                                         class="btn-outline-success btn rounded-0 fw-bold mt-3"
                                     >
                                         Посмотреть код
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <p class="projects__item-name">{{ item.name }}</p>
@@ -111,15 +99,22 @@ const projects = [
     }
 
     &__item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         &:hover {
             .projects__item-name {
                 color: $main-title;
             }
         }
+        img {
+            height: 100%;
+        }
     }
 
     &__item-thumb {
         position: relative;
+        flex-grow: 1;
         &:hover {
             .projects__item-more {
                 opacity: 1;

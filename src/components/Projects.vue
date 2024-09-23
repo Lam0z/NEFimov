@@ -5,14 +5,27 @@ const projects = [
         name: "Database of Recipes",
         preview: "https://lam0z.github.io/meal/",
         linkGH: "https://github.com/Lam0z/meal",
-        stack: ["HTML", "CSS", "JAVASCRIPT", "VUE (router, pinia)"],
+        stack: ["HTML", "CSS", "JAVASCRIPT", "VUE (router, pinia)", "Meal API"],
     },
     {
         img: "./img/todo.jpg",
-        name: "ToDo app",
+        name: "ToDo App",
         preview: "https://lam0z.github.io/todo/",
         linkGH: "https://github.com/Lam0z/todo",
         stack: ["HTML", "CSS", "JAVASCRIPT (LocalStorage)", "VUE"],
+    },
+    {
+        img: "./img/weather.jpg",
+        name: "Weather App",
+        preview: "https://lam0z.github.io/weather/",
+        linkGH: "https://github.com/Lam0z/weather",
+        stack: [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "VUE (router, pinia)",
+            "Weather API",
+        ],
     },
 ];
 </script>
@@ -64,7 +77,7 @@ const projects = [
                             </div>
                             <p class="projects__item-name">{{ item.name }}</p>
                             <div
-                                class="projects__item-tech d-flex column-gap-2"
+                                class="projects__item-tech d-flex column-gap-2 flex-wrap"
                             >
                                 <span
                                     v-for="(tech, index) in item.stack"
